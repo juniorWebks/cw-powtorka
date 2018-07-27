@@ -19,14 +19,16 @@
 
     <script>
 
-        const arrayAge = [37, 26, 18, 16, 3]
+        document.querySelector('.button').addEventListener('click', function () {
+			const inputValue = document.querySelector('.input').value
+			const ageArray = [37, 26, 18, 16, 3]
+			const arrayModify = ageArray.filter(function (el, index, array) {
+				return (el > inputValue)
+			})
 
-document.query
-
-        const newArray = arrayAge.filter(function (element, index, tablica) {
-            return (element > value)
-        })
-        console.log(newArray)
+			const output = document.querySelector('.info__output')
+			output.innerHTML = arrayModify
+		})
 
 
 
