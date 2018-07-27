@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Zadanie 8. Metoda .filter()</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Łukasz Krawczyk (Web Developer / Graphic &amp; Web Designer)" />
+</head>
+
+<body>
+
+    <script>
+
+        const wiek = [37, 26, 18, 16, 3];
+        const wiekNew = wiek.filter(function (element, index, array) {
+            return element >= 18
+        })
+        console.log(wiekNew.sort())
+
+
+
+
+
+
+
+
+
+		/*
+		- Dana jest tablica z wiekiem (latami) [37, 26, 18, 16, 3].
+		
+		- Na podstawie tej tablicy, stwórz nową tablicę, której elementami będą tylko te elementy oryginalnej tablicy, które spełniają kryterium dorosłości.
+		
+		- Następnie, korzystając z metody .sort(), nową tablicę posortuj od wartości najmniejszej do największej.
+		
+		- Nowa tablica ma wyglądać następująco: Array(3) [ 18, 26, 37 ].
+		
+		- Wynik metody .filter() wyprowadź na ekran za pomocą metody console.log().
+		
+		*/
+
+    </script>
+
+</body>
+
+</html>
